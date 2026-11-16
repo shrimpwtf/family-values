@@ -18,7 +18,15 @@ family-values/
 
 ## Install
 
-Put this directory in a skills root that your agent scans (for example `~/.agents/skills/family-values` or `~/.claude/skills/family-values`). The agent loads `SKILL.md` when a request matches its description, and loads the references as needed.
+With the [Skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add shrimpwtf/family-values
+```
+
+Add `-g` to install globally (for all projects) instead of into the current project, and `-y` to skip the prompts.
+
+To install by hand, clone or copy this directory into a skills root that your agent scans (for example `~/.agents/skills/family-values` or `~/.claude/skills/family-values`). The agent loads `SKILL.md` when a request matches its description, and loads the references as needed.
 
 ## Credit
 
